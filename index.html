@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Basic timer</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Font Awesome Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+  rel="stylesheet"
+/>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body id="bodytimer">
+    <div id="timer">
+      <h1>Timer</h1>
+
+      <p id="display"></p>
+
+      <label for="time">Duration:</label>
+      <input type="number" id="time" placeholder="In minutes" min="1">
+      <input type="range" id="volumeControl" title="Volume" min="0" max="1" step="0.1" value="0.5" oninput="setVolume()">
+
+
+      <div id="button">
+        <button id="startBtn" title="Start" onclick="startTimer()"><img src="https://img.icons8.com/material-outlined/256/shutdown.png" width ="40px" height="40px"></button>
+        <button id="pauseBtn" title="Pause" onclick="pauseTimer()" disabled><img src="https://img.icons8.com/material-outlined/256/pause.png" width ="40px" height="40px"></button>
+        <button id="resetBtn" title="Reset" onclick="resetTimer()" disabled><img src="https://img.icons8.com/material-outlined/256/available-updates.png" width ="40px" height="40px"></button>
+      </div>
+    </div>
+    <audio id="myAudio" src="../audio/audio.mp3.mp3"></audio>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
