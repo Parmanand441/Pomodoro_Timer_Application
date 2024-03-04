@@ -2,9 +2,9 @@ var interval;
 var elapsedTime = 0;
 var isPaused = false;
 var start;
-// var audio = new Audio("audio.mp3");
 
 // Get the audio element
+
 var audio = document.getElementById("myAudio");
 
 function startTimer() {
